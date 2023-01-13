@@ -7,122 +7,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">Sawaddee</div>
-        <ul>
-          <li><a href="#photo">Feature Temples</a></li>
-          <li><a href="#recommendations">Recommendations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+          <div class="logo">Sawaddee</div>
+          <ul>
+            <li><a href="#photo">Feature Temples</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#contact">Emergency Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="hero">
-      <section class="intro">
-        <h1>Thinking of Visiting Thailand?</h1>
-        <p>
-          This site might not give you much as it is only to satisfy an
-          assignment by The Odin Project. I did provide some info, but it is
-          merely enough. Nevertheless, Thailand is waiting for your visit!
-        </p>
-        <p>
-          I do recommend you to check out Richard Barrow's
-          <a href="https://www.richardbarrow.com/" target="_blank"> blog</a>. I
-          find him truly insightful and helpful, coming from a Thai person.
-        </p>
-      </section>
+      <div class="hero-wrapper">
+        <section class="intro">
+          <h1>Thinking of Visiting Thailand?</h1>
+          <p>
+            This site might not give you much as it is only to satisfy an
+            assignment by The Odin Project. I did provide some info, but it is
+            merely enough. Nevertheless, Thailand is waiting for your visit!
+          </p>
 
-      <section class="hero-photo">
-        <img src="./images/hero.jpg" alt="giant statue in front of a temple" />
-      </section>
+          <p>
+            I do recommend you to check out Richard Barrow's
+            <a href="https://www.richardbarrow.com/" target="_blank"> blog</a>.
+            I find him truly insightful and helpful, coming from a Thai person.
+          </p>
+
+          <p>
+            Scroll down to see some of the most Beautiful temples in Thailand
+            and personal suggestions!
+          </p>
+        </section>
+
+        <section class="hero-photo">
+          <img
+            src="./images/hero.jpg"
+            alt="giant statue in front of a temple"
+          />
+        </section>
+      </div>
     </section>
     <section id="photos">
       <div class="temple-container">
-        <div class="image">
-          <img src="./images/whiteTemple.jpg" alt="photo of White Temple" />
-        </div>
-        <span class="temple-title"
-          ><a
+        <img src="./images/whiteTemple.jpg" alt="photo of White Temple" />
+
+        <h4 class="temple-title">
+          <a
             href="https://www.tourismthailand.org/Attraction/wat-rong-khun"
             target="_blank"
             >White Temple</a
-          ></span
-        >
-      </div>
-      <div class="temple-container">
-        <div class="image">
-          <span class="temple-title"
-            ><a
-              href="https://www.tourismthailand.org/Attraction/wat-arun-temple-of-dawn"
-              target="_blank"
-              >Wat Arun</a
-            ></span
           >
-          <img src="./images/arun.jpg" alt="photo of Wat Arun" />
-        </div>
+        </h4>
+      </div>
+
+      <div class="temple-container">
+        <h4 class="temple-title">
+          <a
+            href="https://www.tourismthailand.org/Attraction/wat-arun-temple-of-dawn"
+            target="_blank"
+            >Wat Arun</a
+          >
+        </h4>
+        <img src="./images/arun.jpg" alt="photo of Wat Arun" />
       </div>
       <div class="temple-container">
-        <div class="image">
-          <img
-            src="./images/praTart.jpg"
-            alt="photo of Wat Pra Thart Pa Sorn Kaew"
-          />
-        </div>
-        <span class="temple-title"
-          ><a
+        <img
+          src="./images/praTart.jpg"
+          alt="photo of Wat Pra Thart Pa Sorn Kaew"
+        />
+
+        <h4 class="temple-title">
+          <a
             href="https://www.tourismthailand.org/Attraction/wat-phra-thad-pha-son-kaew"
             target="_blank"
             >Wat Phra Thad Pha Son Kaew</a
-          ></span
-        >
+          >
+        </h4>
       </div>
       <div class="temple-container">
-        <span class="temple-title"
-          ><a
+        <h4 class="temple-title">
+          <a
             href="https://www.tourismthailand.org/Attraction/wat-phra-sing"
             target="_blank"
             >Wat Phra Sing</a
-          ></span
-        >
-        <div class="image">
-          <img src="./images/praSingha.jpg" alt="photo of Wat Pra Singha" />
-        </div>
+          >
+        </h4>
+
+        <img src="./images/praSingha.jpg" alt="photo of Wat Pra Singha" />
       </div>
     </section>
     <section id="recommendations">
-      <h3>When to Visit</h3>
-      <p>
-        I highly recommend that you visit Thailand anytime from November to
-        February. By November, it is usually not rainy season anymore. But, in
-        2022, we still had to deal with some rain. Climate change, am i right?
-      </p>
+      <div class="text-container-wrapper">
+        <div class="text-container">
+          <h3>When to Visit</h3>
+          <p>
+            I highly recommend that you visit Thailand anytime from November to
+            February. By November, it is usually not rainy season anymore. But,
+            in 2022, we still had to deal with some rain. Climate change, am i
+            right?
+          </p>
 
-      <h3>Where to Visit</h3>
-      <p>
-        Indeed, I am Thai, but I am still a stranger to many parts of my
-        country. I can say that you should give a few days to Bangkok. Stay in
-        the Thonburi or Sathorn area, if you want to visit the temples and art
-        scenes. Stay in Sukhumvit, if you want to be near all the convenience
-        and city vibe. It can be overwhelming, just fyi. Other than that, I am
-        quite useless. Please Google, because I do, too.
-      </p>
+          <h3>Where to Visit</h3>
+          <p>
+            Indeed, I am Thai, but I am still a stranger to many parts of my
+            country. I can say that you should give a few days to Bangkok. Stay
+            in the Thonburi or Sathorn area, if you want to visit the temples
+            and art scenes. Stay in Sukhumvit, if you want to be near all the
+            convenience and city vibe. It can be overwhelming, just fyi. Other
+            than that, I am quite useless. Please Google, because I do, too.
+          </p>
 
-      <p>I will give a few typical suggestions for provinces to visit.</p>
+          <p>I will give a few typical suggestions for provinces to visit.</p>
 
-      <ul>
-        <span>Some provinces to visit</span>
-        <li>Chiang Mai</li>
-        <li>Surattani</li>
-        <li>Krabi</li>
-      </ul>
+          <ul>
+            <span>Some provinces to visit</span>
+            <li>Chiang Mai</li>
+            <li>Surattani</li>
+            <li>Krabi</li>
+          </ul>
 
-      <p>
-        If you do come here, I hope you get to enjoy our cultures and the
-        kindness of our people. There is so much to see. Be mindful of where you
-        choose to go.
-      </p>
+          <p>
+            If you do come here, I hope you get to enjoy our cultures and the
+            kindness of our people. There is so much to see. Be mindful of where
+            you choose to go.
+          </p>
+        </div>
+      </div>
     </section>
     <section id="contact">
       <h3>Local Emergency Numbers</h3>
@@ -131,6 +151,7 @@
         <li>Thailand Emergency Services (Fire, Ambulance): 191</li>
       </ul>
     </section>
+
     <footer></footer>
   </body>
 </html>
