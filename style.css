@@ -13,6 +13,7 @@
 
 body {
   font-family: 'PT Sans', sans-serif;
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 nav {
@@ -20,7 +21,6 @@ nav {
   display: flex;
   justify-content: center;
   margin: auto;
-  background-color: var(--main-bg-color);
 }
 
 .nav-container {
@@ -29,8 +29,7 @@ nav {
   margin: 1em;
   flex-wrap: wrap;
   justify-content: center;
-
-  /* gap: 20px; */
+  align-items: baseline;
 }
 
 .logo {
@@ -39,22 +38,21 @@ nav {
   display: flex;
 }
 
-ul {
+nav ul {
   display: flex;
   list-style: none;
   flex-grow: 2;
   flex-wrap: wrap;
   padding: 0;
   justify-content: center;
-  /* flex-basis: 400px; */
 }
 
-li {
-  flex-basis: 150px;
+nav li {
   display: flex;
   line-height: 1.5em;
   justify-content: center;
   padding: 0.35em;
+  width: 160px;
 }
 
 h1 {
@@ -70,7 +68,14 @@ h1 {
   justify-content: center;
 }
 
-.hero-wrapper {
+.hero-photo {
+  display: none;
+}
+
+.hero-wrapper,
+.text-container-wrapper,
+.contact-wrapper,
+.footer-wrapper {
   width: 80%;
 }
 
@@ -86,21 +91,24 @@ h1 {
   margin: 1em 0;
 }
 
-.hero-photo {
-  display: none;
+#photos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-#photos {
+.photos-wrapper {
+  width: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0;
-  background-color: var(--main-bg-color);
+  margin: 1em 0;
 }
 
 .temple-container {
+  display: flex;
+  flex-direction: column;
   margin: 1.5em;
-  background-color: white;
 }
 
 img {
@@ -108,13 +116,15 @@ img {
   height: 400px;
 }
 
-.temple-title {
+.temple-title button {
   width: 280px;
   padding: 0.5em;
   font-weight: lighter;
-  /* border: 1px solid var(--border-color); */
+  box-shadow: none;
   background-color: white;
   text-align: center;
+  border: 1px solid var(--border-color);
+  text-decoration: underline;
 }
 
 .temple-title:hover {
@@ -128,7 +138,7 @@ a:hover {
 
 a {
   color: var(--text-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #recommendations {
@@ -137,17 +147,108 @@ a {
   justify-content: center;
 }
 
-.text-container-wrapper {
-  width: 80%;
+.text-container-wrapper,
+#contact,
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .text-container {
   margin: 2em 0;
   max-width: 70ch;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .text-container :nth-child(even) {
   margin: 1em 0;
 }
+
+/* #contact {
+  display: flex;
+  justify-content: center;
+} */
+
+.contact-wrapper {
+  margin: 1em;
+  line-height: 1.5em;
+}
+
+#contact h3 {
+  text-align: center;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+#contact li {
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--second-bg-color);
+}
+
+.footer-wrapper {
+  text-align: center;
+  padding: 1em;
+}
+
+@media all and (min-width: 950px) {
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  .temple-container {
+    width: 40%;
+    align-items: center;
+  }
+}
+/* TODO  adjust the temple images' size. Too much whitspaces around w/ bigger screen*/
+
+@media all and (min-width: 1300px) {
+  .temple-container {
+    width: 20%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .hero-wrapper {
+    justify-content: space-between;
+  }
+  .hero-photo {
+    display: inline;
+    width: 50%;
+  }
+
+  .tenor-gif-embed {
+    width: 100%;
+    height: 100%;
+  }
+  .intro {
+    width: 40%;
+  }
+}
+
+@media all and (min-width: 60px) {
+  .contact-wrapper {
+    width: 70%;
+  }
+  #contact ul {
+    flex-direction: row;
+  }
+  #contact li {
+    width: 50%;
+  }
+}
+
+/* TODO Adjust the width of .contact-wrapper according to the screen size */
