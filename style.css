@@ -4,9 +4,7 @@
 }
 
 :root {
-  --main-bg-color: #fffcf2;
-  --second-bg-color: #bfd5d9;
-  --border-color: #908167;
+  --bg-color: #bfd5d9;
   --header-color: #352208;
   --text-color: #0a0908;
 }
@@ -55,15 +53,21 @@ nav li {
   width: 160px;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--header-color);
+}
+
+h1 {
   margin-bottom: 1em;
 }
 
 .hero {
   width: 100%;
   padding: 1.5em 0;
-  background-color: var(--second-bg-color);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
 }
@@ -113,7 +117,9 @@ h1 {
 
 img {
   width: 280px;
+  max-width: 350px;
   height: 400px;
+  max-height: 500px;
 }
 
 .temple-title button {
@@ -123,7 +129,7 @@ img {
   box-shadow: none;
   background-color: white;
   text-align: center;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--text-color);
   text-decoration: underline;
 }
 
@@ -142,7 +148,7 @@ a {
 }
 
 #recommendations {
-  background-color: var(--second-bg-color);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
 }
@@ -165,17 +171,14 @@ a {
   margin: 1em 0;
 }
 
-/* #contact {
-  display: flex;
-  justify-content: center;
-} */
-
 .contact-wrapper {
+  display: flex;
+  flex-direction: column;
   margin: 1em;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 
-#contact h3 {
+#contact h2 {
   text-align: center;
 }
 
@@ -188,14 +191,13 @@ a {
 }
 
 #contact li {
-  width: 100%;
   text-align: center;
 }
 
 footer {
   display: flex;
   justify-content: center;
-  background-color: var(--second-bg-color);
+  background-color: var(--bg-color);
 }
 
 .footer-wrapper {
@@ -213,21 +215,34 @@ footer {
     align-items: center;
   }
 }
-/* TODO  adjust the temple images' size. Too much whitspaces around w/ bigger screen*/
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 1400px) {
   .temple-container {
     width: 20%;
+  }
+
+  .photos-wrapper {
+    justify-content: space-around;
+  }
+  nav li {
+    width: 220px;
   }
 }
 
 @media all and (min-width: 1024px) {
+  nav {
+    justify-content: space-around;
+  }
+  nav li {
+    justify-content: flex-end;
+  }
   .hero-wrapper {
     justify-content: space-between;
   }
   .hero-photo {
     display: inline;
-    width: 50%;
+    width: 45%;
+    max-width: 700px;
   }
 
   .tenor-gif-embed {
@@ -235,11 +250,11 @@ footer {
     height: 100%;
   }
   .intro {
-    width: 40%;
+    width: 45%;
   }
 }
 
-@media all and (min-width: 60px) {
+@media all and (min-width: 650px) {
   .contact-wrapper {
     width: 70%;
   }
@@ -250,5 +265,3 @@ footer {
     width: 50%;
   }
 }
-
-/* TODO Adjust the width of .contact-wrapper according to the screen size */
