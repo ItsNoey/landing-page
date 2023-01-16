@@ -12,6 +12,8 @@
 body {
   font-family: 'PT Sans', sans-serif;
   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color: var(--text-color);
+  text-align: justify;
 }
 
 nav {
@@ -58,6 +60,7 @@ h2,
 h3,
 h4 {
   color: var(--header-color);
+  font-size: 1.4em;
 }
 
 h1 {
@@ -85,10 +88,6 @@ h1 {
 
 .intro {
   max-width: 60ch;
-}
-
-.intro p {
-  color: var(--text-color);
 }
 
 .intro p:nth-child(odd) {
