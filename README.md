@@ -5,6 +5,9 @@ This project is tasked by The Odin Project. I couldn't help making it more perso
 I wanted to showcase some of Thailand's most beautiful temples. Some personal suggestions are given, but they are hardly helpful. I also provided links to information about each temple and a Thai travel blog from a highly-regarded source.
 
 Nevertheless, what I enjoyed most about the project was implementing Responsive Design. Please see the screenshots of the project below.
+
+## Link
+https://itsnoey.github.io/landing-page/
  
  
 ## Screenshots
