@@ -8,7 +8,10 @@ Nevertheless, what I enjoyed most about the project was implementing Responsive 
  
  
 ## Screenshots
+Desktop Design
 ![sawaddee_desktop](https://user-images.githubusercontent.com/77329731/212606486-2907a3bf-9994-43f7-b6c9-e489cf07870e.png)
+
+Mobile Design
 ![sawaddee_mobile](https://user-images.githubusercontent.com/77329731/212606519-8413b57b-a53c-4d14-86c0-5ae2fe832463.gif)
 
 
